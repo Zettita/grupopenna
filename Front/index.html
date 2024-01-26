@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Front</title>
+</head>
+<body>
+    <h1>cargar pdf</h1>
+    
+        <form>
+            <label for="tittle">Titulo del PDF</label>
+            <input type="text" id="tittle" name="tittle">
+            <label for="pdf">Subir PDF</label>
+            <input name="pdfFile" type="file" id="pdfFile" accept=".pdf" onchange="handleFileSelect()" />
+            <button type="submit" id="submitButton">Enviar</button>
+        </form>
+
+    <section id="preview">
+        <article>
+            <h3>Información del archivo:</h3>
+            <p id="fileName"></p>
+            <p><strong>Vista previa:</strong></p>
+            <iframe src="" id="pdfPreview" frameborder="0" width="600" height="400"></iframe>
+
+        </article>
+    </section>
+    <script src="./js/script.js"></script>
+</body>
+</html>

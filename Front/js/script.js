@@ -28,12 +28,6 @@ form.addEventListener("submit", (e) => {
 
   let input = e.target;
 
-  // let body = {
-  //     titulo: input.tittle.value,
-  //     file: input.pdfFile.files[0],
-  // }
-  // console.log(body);
-
   let formData = new FormData();
   formData.append("titulo", input.tittle.value);
   formData.append("file", input.pdfFile.files[0]);
